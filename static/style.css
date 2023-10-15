@@ -1,0 +1,43 @@
+:root {
+	--LEFTWIDTH: 35%;
+	--MAXWIDTH: 1270px;
+}
+
+body {
+	background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+	margin: 0;
+	height: 100vh;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+.main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100vh;
+	width: 100vw;
+}
+
+.logo {
+	background-image: url('logo.svg');
+	height: 130px;
+	width: 600px;
+	background-size: fit;
+	background-repeat: no-repeat;
+}
+
+.text {
+	font-family: Petrona;
+	font-size: 30px;
+	width: 70%;
+	text-align: center;
+}
+
+
+@media screen and (max-width:700px) {
+	.logo {
+		width: 80%;
+	}
+}
